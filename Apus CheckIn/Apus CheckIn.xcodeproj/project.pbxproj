@@ -7,24 +7,30 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		9B078ABC27BF6EA10098CA25 /* tmpDB.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B078ABB27BF6EA10098CA25 /* tmpDB.swift */; };
 		9B9A26AD27B4E95200A62E9F /* Apus_CheckInApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B9A26AC27B4E95200A62E9F /* Apus_CheckInApp.swift */; };
 		9B9A26AF27B4E95200A62E9F /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B9A26AE27B4E95200A62E9F /* ContentView.swift */; };
 		9B9A26B127B4E95300A62E9F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9B9A26B027B4E95300A62E9F /* Assets.xcassets */; };
 		9B9A26B427B4E95300A62E9F /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9B9A26B327B4E95300A62E9F /* Preview Assets.xcassets */; };
-		9B9A26BB27B4F22700A62E9F /* DistanceCompare.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B9A26BA27B4F22600A62E9F /* DistanceCompare.swift */; };
 		9B9A26BD27B503F900A62E9F /* LocationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B9A26BC27B503F900A62E9F /* LocationManager.swift */; };
 		9B9A26BF27B5041400A62E9F /* LocationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B9A26BE27B5041400A62E9F /* LocationView.swift */; };
+		9BC1DFE427BF6A0E00D778B7 /* ProcessLocation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BC1DFE327BF6A0E00D778B7 /* ProcessLocation.swift */; };
+		9BC1DFE627BF6B4600D778B7 /* ProcessUUID.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BC1DFE527BF6B4600D778B7 /* ProcessUUID.swift */; };
+		9BC1DFE827BF6B6D00D778B7 /* UUIDManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BC1DFE727BF6B6D00D778B7 /* UUIDManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		9B078ABB27BF6EA10098CA25 /* tmpDB.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = tmpDB.swift; sourceTree = "<group>"; };
 		9B9A26A927B4E95200A62E9F /* Apus CheckIn.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Apus CheckIn.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		9B9A26AC27B4E95200A62E9F /* Apus_CheckInApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Apus_CheckInApp.swift; sourceTree = "<group>"; };
 		9B9A26AE27B4E95200A62E9F /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		9B9A26B027B4E95300A62E9F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		9B9A26B327B4E95300A62E9F /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
-		9B9A26BA27B4F22600A62E9F /* DistanceCompare.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DistanceCompare.swift; sourceTree = "<group>"; };
 		9B9A26BC27B503F900A62E9F /* LocationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationManager.swift; sourceTree = "<group>"; };
 		9B9A26BE27B5041400A62E9F /* LocationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationView.swift; sourceTree = "<group>"; };
+		9BC1DFE327BF6A0E00D778B7 /* ProcessLocation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProcessLocation.swift; sourceTree = "<group>"; };
+		9BC1DFE527BF6B4600D778B7 /* ProcessUUID.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProcessUUID.swift; sourceTree = "<group>"; };
+		9BC1DFE727BF6B6D00D778B7 /* UUIDManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UUIDManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,10 +64,9 @@
 			isa = PBXGroup;
 			children = (
 				9B9A26AC27B4E95200A62E9F /* Apus_CheckInApp.swift */,
-				9B9A26AE27B4E95200A62E9F /* ContentView.swift */,
-				9B9A26BC27B503F900A62E9F /* LocationManager.swift */,
-				9B9A26BE27B5041400A62E9F /* LocationView.swift */,
-				9B9A26BA27B4F22600A62E9F /* DistanceCompare.swift */,
+				9BAB73BF27BE55E8000873B2 /* View */,
+				9BAB73C027BE55EE000873B2 /* ViewModel */,
+				9BAB73BE27BE55DC000873B2 /* Model */,
 				9B9A26B027B4E95300A62E9F /* Assets.xcassets */,
 				9B9A26B227B4E95300A62E9F /* Preview Content */,
 			);
@@ -74,6 +79,34 @@
 				9B9A26B327B4E95300A62E9F /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		9BAB73BE27BE55DC000873B2 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				9BC1DFE327BF6A0E00D778B7 /* ProcessLocation.swift */,
+				9BC1DFE527BF6B4600D778B7 /* ProcessUUID.swift */,
+				9B078ABB27BF6EA10098CA25 /* tmpDB.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		9BAB73BF27BE55E8000873B2 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				9B9A26AE27B4E95200A62E9F /* ContentView.swift */,
+				9B9A26BE27B5041400A62E9F /* LocationView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		9BAB73C027BE55EE000873B2 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				9B9A26BC27B503F900A62E9F /* LocationManager.swift */,
+				9BC1DFE727BF6B6D00D778B7 /* UUIDManager.swift */,
+			);
+			path = ViewModel;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -146,11 +179,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9BC1DFE427BF6A0E00D778B7 /* ProcessLocation.swift in Sources */,
 				9B9A26AF27B4E95200A62E9F /* ContentView.swift in Sources */,
+				9BC1DFE827BF6B6D00D778B7 /* UUIDManager.swift in Sources */,
+				9BC1DFE627BF6B4600D778B7 /* ProcessUUID.swift in Sources */,
 				9B9A26BD27B503F900A62E9F /* LocationManager.swift in Sources */,
+				9B078ABC27BF6EA10098CA25 /* tmpDB.swift in Sources */,
 				9B9A26BF27B5041400A62E9F /* LocationView.swift in Sources */,
 				9B9A26AD27B4E95200A62E9F /* Apus_CheckInApp.swift in Sources */,
-				9B9A26BB27B4F22700A62E9F /* DistanceCompare.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

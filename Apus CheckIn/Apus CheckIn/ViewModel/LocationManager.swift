@@ -39,12 +39,26 @@ class LocationManager: NSObject, ObservableObject, CLLocationManagerDelegate {
 
     func locationManager(_ manager: CLLocationManager, didChangeAuthorization status: CLAuthorizationStatus) {
         locationStatus = status
-        //print(#function, statusString)
     }
     
     func locationManager(_ manager: CLLocationManager, didUpdateLocations locations: [CLLocation]) {
         guard let location = locations.last else { return }
         lastLocation = location
-        //print(#function, location)
+    }
+    
+    /* below is what I appended */
+    
+    private var userLatitude: Double { lastLocation?.coordinate.latitude ?? 0 }
+    
+    private var userLongitude: Double { lastLocation?.coordinate.longitude ?? 0 }
+    
+    private let processLocation = ProcessLocation()
+    
+    var myDistanceFromCluster: Double {
+        processLocation.getDistanceFromCluster(lat: userLatitude, lon: userLongitude)
+    }
+    
+    var isNear: Bool {
+        processLocation.isNear(lat: userLatitude, lon: userLongitude)
     }
 }
