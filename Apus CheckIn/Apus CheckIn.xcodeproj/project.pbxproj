@@ -64,9 +64,9 @@
 			isa = PBXGroup;
 			children = (
 				9B9A26AC27B4E95200A62E9F /* Apus_CheckInApp.swift */,
+				9BAB73BE27BE55DC000873B2 /* Model */,
 				9BAB73BF27BE55E8000873B2 /* View */,
 				9BAB73C027BE55EE000873B2 /* ViewModel */,
-				9BAB73BE27BE55DC000873B2 /* Model */,
 				9B9A26B027B4E95300A62E9F /* Assets.xcassets */,
 				9B9A26B227B4E95300A62E9F /* Preview Content */,
 			);
