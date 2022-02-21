@@ -10,10 +10,10 @@ import Foundation
 class UUIDManager: ObservableObject {
     var UUID: String
     var intraID: String
-    private let processUUID = ProcessUUID()
+    private let db = tmpDB()
     init(uuid: String) {
         self.UUID = uuid
         print(uuid) // 추후 삭제할 것
-        self.intraID = ProcessUUID.getIntraByUUID(uuid: uuid)
+        self.intraID = db.getIntraByUUID(uuid: uuid)
     }
 }
